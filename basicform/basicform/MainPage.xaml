@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="basicform.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DeepPink" Padding="24" CornerRadius="0">
+            <Label Text="Welcome !" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text=" Username" FontSize="Medium"></Label>
+        <Entry Placeholder="enter your username" TextChanged="OnEntryTextChanged" Completed="OnEntryCompleted"></Entry>
+
+        <Label Text=" Password" FontSize="Medium" ></Label>
+        <Entry Placeholder="enter your password" IsPassword="True" IsSpellCheckEnabled="False" IsTextPredictionEnabled="False"></Entry>
+
+        <Button Text="Click me"
+        Clicked="OnButtonClicked"
+        TextColor="Blue"
+        BackgroundColor="Aqua"
+        BorderColor="Red"
+        BorderWidth="5"
+        CornerRadius="5"
+        WidthRequest="150"
+        HeightRequest="75" />
+
+
+    </StackLayout>
+
+</ContentPage>
